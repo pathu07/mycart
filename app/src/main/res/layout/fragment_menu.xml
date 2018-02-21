@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This is "Fragment A"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.cart.app.view.adapter.ProductsListView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:visibility="invisible"
+        android:columnWidth="@dimen/column_width"
+        android:padding="@dimen/activity_horizontal_margin"/>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        app:indicatorColor="@color/primaryDarkColor"
+        app:indicatorName="BallScaleRippleMultipleIndicator" />
+</RelativeLayout>

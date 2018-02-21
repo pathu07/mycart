@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/favs">
+        <item android:id="@+id/cart_remove"
+            android:title="@string/remove" />
+        <item android:id="@+id/cart_move_to_favorite"
+            android:title="@string/add_to_fav" />
+    </group>
+</menu>

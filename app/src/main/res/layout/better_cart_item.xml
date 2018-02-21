@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MyCartHolder"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/holder_border"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="2dp"
+    android:layout_margin="@dimen/item_margin"
+    android:focusable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/arrow" />
+
+        <Button
+            android:id="@+id/buttonDown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:rotation="180"
+            android:layout_alignStart="@+id/buttonUp"
+            android:layout_marginBottom="12dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/quantityHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/cardView"
+        android:id="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/cartHolderImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:layout_toEndOf="@+id/imageView">
+
+        <RelativeLayout
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/nameHolder"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/priceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/priceHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="11dp"
+                android:layout_toStartOf="@+id/priceView"
+                android:text="3 x $ 2.0 :" />
+
+            <TextView
+                android:id="@+id/priceView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@+id/priceHolder"
+                android:layout_alignBottom="@+id/priceHolder"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginEnd="36dp"
+                />
+
+            <Button
+                android:id="@+id/deleteCart"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="13dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/delete" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

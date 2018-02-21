@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MyHolder"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="@dimen/item_margin"
+    android:background="@drawable/holder_border"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="2dp"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/holderImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/holderText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/holderPrice"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/holderPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="2dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/holderPriceOld"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/holderPrice"
+        android:layout_alignBottom="@+id/holderPrice"
+        android:layout_toEndOf="@+id/holderPrice"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/holderCart"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@drawable/cart" />
+
+</RelativeLayout>

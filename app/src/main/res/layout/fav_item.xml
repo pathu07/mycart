@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MyFavHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/item_margin"
+    android:background="@drawable/holder_border"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/favHolderImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/favHolderImage">
+
+        <TextView
+            android:id="@+id/favHolderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/primaryLightColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/favHolderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/secondaryDarkColor"
+            android:paddingRight="10dp"/>
+
+        <Button
+            android:id="@+id/moveToCart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/cart"
+            />
+
+        <Button
+            android:id="@+id/deleteFav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/moveToCart"
+            android:layout_alignTop="@+id/moveToCart"
+            android:layout_toEndOf="@+id/moveToCart"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/delete"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

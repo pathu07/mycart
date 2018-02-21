@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">E-Mart</string>
+    <string name="fragName">MenuFragment</string>
+    <string name="detailFragment">DetailFragment</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="add_to_cart_lower">Add To Cart</string>
+    <string name="add_to_fav">Move to Favorite</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_fav">My Favorite</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="removeMe">Remove</string>
+    <string name="moveToCart">Move To Cart</string>
+    <string name="remove">Remove From Cart</string>
+    <string name="groceries">Groceries</string>
+    <string name="added_to_cart">Added to Cart</string>
+    <string name="add_cart">Added To Cart</string>
+    <string name="favorite_list_empty">Favorite List Empty!</string>
+    <string name="cart_list_empty">Cart Looks Empty!</string>
+    <string name="total_price">Total Price : $ %1$s</string>
+    <string name="price_by_items">%1s x $ %2s</string>
+    <string name="item_removed">Item Removed From Cart</string>
+    <string name="item_removed_fav">Item Removed from Favorite</string>
+    <string name="item_moved">Item Moved to Cart</string>
+    <string name="item_added_fav">Item Added to Favorite</string>
+    <string name="error_string">ERROR while fetching list</string>
+</resources>
