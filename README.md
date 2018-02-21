@@ -2,7 +2,7 @@
 
 A Simple e-commerce application to demonstrate my coding abilities
 
-##Facts about the application
+## Facts about the application
 - Supports both mobiles, tablets and both orientations
 
 - Used Android ViewModel concepts to avoid View/data loss in Configuration changes like Orientation etc. This application followed activity lifecycle. 
